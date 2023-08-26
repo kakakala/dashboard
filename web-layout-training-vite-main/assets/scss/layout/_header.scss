@@ -1,4 +1,32 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.nav{
+  position: fixed;
+  min-width: 296px;
+  min-height: 100vh;
+}
+
+.nav-link{
+  position: relative;
+  color: #000;
+
+  &:focus::before{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -24px;
+    width: 4px;
+    height: 32px;
+    border-left: 4px solid #198754;
+  }
+}
+
+.account{
+  img{
+    width: 40px;
+    height: 40px;
+  }
+
+  &-email{
+    font-size: 14px;
+    color: #6C757D;
+  }
 }
